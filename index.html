@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
-    <link rel="manifest" href="./icon/site.webmanifest">
+    <link rel="icon" href="./icon/favicon-32x32.png" type="image/gif" sizes="16x16"> 
   </head>
   <body>
-    <header>
-    <nav class="navbar__menu">
-            <div class="nav-items">
-              <a class="nav-item" href="/">Home</a>
-              <a class="nav-item" href="#about">About Me</a>
-              <a class="nav-item" href="https://vk.com/dancoin121">Contacts</a>
-              <a class="nav-item" href="/">My Works</a>                
+    
+      <!--  <nav class="navbar__menu">
+                <div class="nav-items">
+              <a class="nav-item" href="#home-page">Home</a>
+              <a class="nav-item" href="#about">About Me</a>            
+              <a class="nav-item" href="#my-works">My Works</a></div>   
+      </div>
+      </nav>-->
+<!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Portfolio</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#works" class="navbar__links" id="works-page"
+              >My Works</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+          </li>
+        </ul>
       </div>
     </nav>
-  </header>
-  <br>
-  <br>
-
   <div class="master">
-  <h1>Masterpeace</h1>
-  <h1>Masterpeace</h1>
+  <h1>Main</h1>
+  <h1>Main</h1>
   </div>
 
   <div class="draw">
@@ -40,12 +58,12 @@
   <br>
   <br>
 
-  <section class="Home">
+  <section class="Home" id="home">
     <div class = "Landing">
     <h1>Landing Page</h1>
     </div>
     <h1 class="Landing_web">WEB DEVELOPING</h1>
-    <button class="Button_one">Pomenyat</button>
+    <button type="button" id="theme-switcher"><img id="theme" src="./images/first_quarter_32px.png"></button>
   </section>
 
   <br>
@@ -56,19 +74,25 @@
     <section class="About_Me">
       <h1 class="title_2">Немного о себе ;)</h1>
         <p id="about">
-        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+       Приветствую, меня зовут Данила и я начинающий front-end разработчик.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor erat, mollis vitae ligula non, ullamcorper fermentum nunc. Donec consectetur ultricies lobortis. Fusce molestie sem felis, non vestibulum felis finibus sit amet. Ut convallis pulvinar scelerisque. Quisque pharetra rhoncus felis, ut dignissim dui aliquam at. Mauris molestie eros et felis pellentesque, dignissim pharetra magna molestie. Vivamus ultrices euismod ligula, eget consectetur mi tincidunt a. Aliquam erat volutpat. Duis ut urna id sem faucibus facilisis.
       </p>
     </section>
 
     <br>
     <br>
 
+    <article class="My_Works" id="works">
+      <h1>Check my Github for works, this section in developing xD</h1>
+    </article>
+
+
     <footer class="footer">
       <a class ="f2"href="https://github.com/DanMagicDev">Github
         <img class="image_one" src="./images/githubTOPICH.svg">
       </a>
-
     </footer>
+
+    <script src="app.js"></script> 
   </body>
 </html>
 
